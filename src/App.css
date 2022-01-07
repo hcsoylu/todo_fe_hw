@@ -1,38 +1,128 @@
-.App {
+.container {
+  width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.welcome {
   text-align: center;
+  margin-top: 300px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcome a {
+  color: blue;
+  font-size: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.auth {
+  width: 300px;
+  margin: 200px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.auth input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.auth button {
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth a {
+  color: blue;
+  font-size: inherit;
+}
+
+.todo_form {
+  margin: 50px auto;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.todo_form input {
+  padding: 5px;
+  border-radius: 4px;
+  width: 300px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px;
+  border: 1px solid rgb(73, 70, 70);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+li div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons_span span,
+.icons_span svg {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn {
+  background-color: rgb(77, 150, 219);
   color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.edit_form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 50px auto;
+  border: 1px solid grey;
+  padding: 20px 15px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit_form input {
+  margin-top: 20px;
+}
+
+.edit_form button {
+  margin-top: 20px;
+}
+
+.edit_todo_input {
+  border-radius: 4px;
+  padding: 5px;
+  border: 1px solid rgb(77, 150, 219);
 }
